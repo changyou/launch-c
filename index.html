@@ -9,19 +9,32 @@
 	<title>PiuPiu</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-
+	<link href="css/reset.css" type="text/css" rel="stylesheet" />
+	<link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-	<div class="pg-header"></div>
-	<div id="logo">
-		LOGO
+	<div class="hd">
+		<div class="hd-main">
+			<a href="/index.html">
+				<img src="img/logo.png" id="logo" alt="Launcher Logo">
+			</a>
+		</div>
 	</div>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/TweenMax.min.js"></script>
-	<script>
-	window.onload = function(){
-	    var logo = document.getElementById("logo");
-	    TweenLite.to(logo, 1, {left:"632px"});
-	}
-	</script>
+	
+	
+	<div class="bg bg_1"></div>
+	<div class="bg bg_2"></div>
+	<div class="bg bg_3"></div>
+	<div class="bg bg_4"></div>
+	
+
+	
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/plugins/CSSPlugin.min.js"></script>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/action.js"></script>
 </body>
 </html>
+
