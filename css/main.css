@@ -13,6 +13,7 @@ html {
 	position: fixed;
 	border-bottom: 2px solid #D5D5D5;
 	background-color: white;
+	z-index: 999;
 }
 
 .hd-main {
@@ -21,23 +22,120 @@ html {
 }
 
 #logo {
-	margin-left: 100px;
-	opacity: 0;
+/*	margin-left: 100px;*/
+/*	opacity: 1;*/
 }
-.bg { height: 855px; }
-.bg_1 {
+
+.bd {
+	width: 960px; height: 100%;
+	position: relative;
+	margin: 0 auto;
+/*
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -480px;
+*/
+}
+
+/* The last page style */
+.last-page {
+	margin-top: 200px;
+}
+.last-page h1 {
+	font-size: 120px;
+	font-weight: bold;
+	font-family: Microsoft Yahei;
+	margin: 50px 0;
+}
+.last-page p {
+	margin: 50px 0;
+	font-family: Microsoft Yahei;
+}
+.last-page a:hover img {
+	opacity: 0.8;
+}
+
+/*Assets*/
+.phone0 {
+	left: 490px;
+	top: 200px;
+}
+
+.st_0 .intro-text {
+	width: 480px;
+	top: 200px;
+	position: absolute;
+	font-family: Microsoft Yahei;
+}
+.st_0 .intro-text h1 {
+	font-size: 84px;
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+}
+.st_0 .intro-text p {
+	font-size: 24px;
+}
+
+.st_2 .intro-text {
+	width: 500px;
+}
+.functions {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-left: -440px;
+	margin-top: -320px;
+	z-index: 15;
+}
+.wheatear {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+}
+
+/*Background Style*/
+.bg {
+	height: 855px;
+	position: relative;
+}
+.st_0 {
 	background: #FFF url(../img/bs1.jpg) center top repeat-x;
 }
 
-.bg_2 {
+.st_1, .st_2 {
 	background: #55880F url(../img/bs2.jpg) center top repeat-x;
 }
 
-.bg_3 {
+.st_3 {
 	background: url(../img/bs3.jpg) repeat;
 	width: 100%;
 }
 
-.bg_4 {
+.st_4 {
 	background: white;
+}
+
+/*utils*/
+.transparent {
+	opacity: 0;
+}
+
+.hide {
+	display: none;
+}
+
+.absolute {
+	position: absolute;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
 }
