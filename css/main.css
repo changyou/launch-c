@@ -1,7 +1,7 @@
 html {
 	width: 100%;
 	height: 100%;
-/*	overflow: hidden;*/
+	overflow: hidden;
 	padding-top: 37px;
 }
 
@@ -37,7 +37,9 @@ html {
 	margin-left: -480px;
 */
 }
-
+.intro-text {
+	color: #000;
+}
 /* The last page style */
 .last-page {
 	margin-top: 200px;
@@ -62,11 +64,19 @@ html {
 	top: 200px;
 }
 
+.appicons {
+	position: absolute;
+	top: -200px;
+	left: -380px;
+	z-index: 10;
+}
+
 .st_0 .intro-text {
 	width: 480px;
 	top: 200px;
 	position: absolute;
 	font-family: Microsoft Yahei;
+	z-index: 15;	
 }
 .st_0 .intro-text h1 {
 	font-size: 84px;
@@ -78,9 +88,30 @@ html {
 	font-size: 24px;
 }
 
+
+
 .st_2 .intro-text {
+	position: absolute;
+	top: 200px;
+	left: 300px;
 	width: 500px;
+	opacity: 0;
+	font-family: Microsoft Yahei;
 }
+.st_2 .intro-text h1 {
+	font-size: 96px;
+	line-height: 1em;
+}
+.st_2 .intro-text p {
+	display: block;
+	width: 360px;
+	font-size: 24px;
+	float: right;
+	line-height: 1em;
+	margin-top: 20px;
+}
+
+
 .functions {
 	top: 50%;
 	left: 50%;
@@ -88,13 +119,50 @@ html {
 	margin-left: -440px;
 	margin-top: -320px;
 	z-index: 15;
+	box-shadow: #454545 2px 2px 1px;
+	opacity: 0.8;
 }
 .wheatear {
 	position: absolute;
-	bottom: 0;
 	right: 0;
+	bottom: 500px;
+	opacity: 0;
 	z-index: 10;
 }
+.polygon {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	margin-left: -840px;
+	opacity: 0;
+}
+
+.wphone-imgs {
+	position: absolute;
+	top: 40px;
+	left: 500px;
+}
+.wphone {
+	position: absolute;
+	left: 0; top: 0;
+	opacity: 0;
+}
+.st_3 .intro-text {
+	position: absolute;
+	top: 400px;
+	left: 50px;
+	font-family: Microsoft Yahei;
+}
+.st_3 .intro-text h1 {
+	font-size: 56px;
+}
+.st_3 .intro-text p {
+	display: block;
+	width: 400px;
+	margin: 20px 40px;
+	font-size: 24px;
+}
+
 
 /*Background Style*/
 .bg {
