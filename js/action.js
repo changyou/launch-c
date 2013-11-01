@@ -27,6 +27,7 @@ $(function() {
 			Tween.to($appicons, 1, { top: "0" });
 			Tween.to($intro1, 1, { top: "200px" });
 			Tween.to($phone0, 1, { top: "200px", yoyo: true });
+			Tween.to($wheatear, 1, { bottom: "-610px", delay: 1 });
 		},
 		function step1() {
 			TweenLite.to( $("body"), 1, { marginTop: -(pageDeltas[1] * partHeight), delay: 0.5, ease: Sine.easeInOut });
