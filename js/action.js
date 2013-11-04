@@ -35,18 +35,18 @@ $(function() {
 			Tween.to($intro1, 1, { top: "-=500px" });
 			Tween.to($phone0, 1, { top: "-=475px", delay: 0.5});
 			Tween.to($st2, 1, { opacity: 1, yoyo: true });
-			Tween.to($functions, 2, { opacity: 0.8, top: "50%", marginTop: "-320px" });
+			Tween.to($functions, 2, { opacity: 0.8, top: "50%", marginTop: "-260px" });
 			Tween.to($intro2, 1, { opacity: 0, yoyo: true, top: "100%" });
 			
 			Tween.to($wheatear, 1, { opacity: 1, bottom: 0 });
-			Tween.to($polygon, 1, { opacity: 0, top:"100%", marginTop: "-250px" });
+			Tween.to($polygon, 1, { opacity: 0, top:"100%", marginTop: "-210px" });
 		},
 		function step2() {
 			TweenLite.to( $("body"), 1, { marginTop: -(pageDeltas[2] * partHeight), delay: 0.5, ease: Sine.easeOut });
 			Tween.to($st2, 1, { opacity: 0.8, yoyo: true });
 			Tween.to($functions, 2, { opacity: 0, yoyo: true, "top": "-200px" });
 			Tween.to($phone1, 1, { opacity: 0, yoyo: true, skewX: "0" });
-			Tween.to($intro2, 1, { opacity: 1, yoyo: true, top: "200px" });
+			Tween.to($intro2, 1, { opacity: 1, yoyo: true, top: "145px" });
 			
 			Tween.to($wheatear, 1, { opacity: 0, bottom: "500px", yoyo: true });
 			Tween.to($polygon, 1, { opacity: 1, top: "0%" });

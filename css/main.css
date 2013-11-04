@@ -1,3 +1,13 @@
+
+@font-face {
+	font-family: "hncn";
+	src: url("HelveticaNeueLTPro-XBlkCn.otf");
+}
+@font-face {
+	font-family: "hnex";
+	src: url("HelveticaNeueLTPro-UltLtEx.otf");
+}
+
 html {
 	width: 100%;
 	height: 100%;
@@ -11,7 +21,7 @@ html {
 	top: 0;
 	left: 0;
 	position: fixed;
-	border-bottom: 2px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
 	background-color: white;
 	z-index: 999;
 }
@@ -39,7 +49,19 @@ html {
 }
 .intro-text {
 	color: #000;
-	z-index: 25;
+	z-index: 55;
+}
+.intro-text h1 {
+	font-family: "hncn", "Microsoft Yahei";
+	font-size: 96px;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+.intro-text p {
+	font-family: "hnex", "Microsoft Yahei";
+	font-size: 18px;
+	line-height: 1.05em;
+	letter-spacing: 0.09em;
 }
 /* The last page style */
 .last-page {
@@ -48,12 +70,12 @@ html {
 .last-page h1 {
 	font-size: 120px;
 	font-weight: bold;
-	font-family: Microsoft Yahei;
-	margin: 50px 0;
+	font-family: "hncn", "Microsoft Yahei";
+	margin: 50px 0 0;
 }
 .last-page p {
-	margin: 50px 0;
-	font-family: Microsoft Yahei;
+	margin: 20px 0 43px;
+	font-family: "hnex", "Microsoft Yahei";
 }
 .last-page a:hover img {
 	opacity: 0.8;
@@ -77,40 +99,31 @@ html {
 	width: 480px;
 	top: 200px;
 	position: absolute;
-	font-family: Microsoft Yahei;
 	z-index: 15;
 }
 .st_0 .intro-text h1 {
-	font-size: 84px;
-	font-weight: bold;
-	line-height: 1em;
 	margin-bottom: 0.5em;
 }
 .st_0 .intro-text p {
-	font-size: 24px;
+	padding-right: 10px;
 }
-
 
 
 .st_2 .intro-text {
 	position: absolute;
-	top: 200px;
+	top: 145px;
 	left: 300px;
-	width: 500px;
 	opacity: 0;
-	font-family: Microsoft Yahei;
 }
 .st_2 .intro-text h1 {
-	font-size: 96px;
-	line-height: 1em;
+	line-height: 0.85em;
+	font-size: 160px;
 }
 .st_2 .intro-text p {
 	display: block;
-	width: 360px;
-	font-size: 24px;
+	width: 480px;
 	float: right;
-	line-height: 1em;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 
@@ -126,9 +139,10 @@ html {
 }
 .wheatear {
 	position: absolute;
-	right: 0;
+	right: 50%;
+	margin-right: -684px;
 	opacity: 0;
-	z-index: 10;
+	z-index: 15;
 }
 .polygon {
 	position: fixed;
@@ -150,18 +164,16 @@ html {
 }
 .st_3 .intro-text {
 	position: absolute;
-	top: 400px;
-	left: 50px;
-	font-family: Microsoft Yahei;
+	top: 420px;
+	left: 65px;
 }
 .st_3 .intro-text h1 {
-	font-size: 56px;
+	font-size: 60px;
 }
 .st_3 .intro-text p {
 	display: block;
-	width: 400px;
-	margin: 20px 40px;
-	font-size: 24px;
+	width: 370px;
+	margin: 43px 0;
 }
 
 
@@ -175,7 +187,7 @@ html {
 }
 
 .st_1, .st_2 {
-	background: #55880F url(../img/bs2.jpg) center top repeat-x;
+	background: #55880F url(../img/bs2.jpg) center -3px repeat-x;
 }
 
 .st_3 {
