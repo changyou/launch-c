@@ -164,7 +164,7 @@ html {
 }
 .st_3 .intro-text {
 	position: absolute;
-	top: 420px;
+	top: 100%; /*to 420px;*/
 	left: 65px;
 }
 .st_3 .intro-text h1 {
