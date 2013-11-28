@@ -19,13 +19,28 @@ $(function() {
 		$polygon = $("#polygon"),
 		$wphone = $(".wphone-imgs"),
 		$intro3 = $("#intro3"),
-		$st2 = $(".st_2");
-	var flag = false; // in process
+		$st2 = $(".st_2"),
+		$rolling = $(".rolling-tip");
+	var flag = false, // in process
+		roN = 0;
 	var unLock = function() {
 		flag = false;
 	};
-
 	Tween.from($logo, 0.5, { "margin-left":"100px", opacity: 1 });
+
+	var rollingTween = Tween.to($rolling, 0.2, { bottom: "2px", yoyo: true, repeat: -1, ease:Power4.easeOut,
+		onRepeatParams: [$rolling, "{self}"],
+		onRepeat: function($ro, tw) {
+			roN = roN + 1;
+			if(0 === roN % 6) {
+				tw.pause();
+				setTimeout(function() {
+					tw.play();
+				}, 2000);
+			}
+		}
+	});
+
 	window.steps = [
 		function step0() {
 			Tween.to( $("body"), 1, { marginTop: -(pageDeltas[0] * partHeight), delay: 0.5, ease: Sine.easeOut });
@@ -66,6 +81,7 @@ $(function() {
 			Tween.to($wphone, 2, { top: "20px"});
 			Tween.to($polygon, 1, { opacity: 1, top: "0%" });
 			Tween.to($intro3, 1, { opacity: 1, top: "420px", delay: 1.5, onComplete: unLock} );
+			$rolling.fadeIn();
 		},
 		function step4() {
 			Tween.to( $("body"), 1, { marginTop: -(pageDeltas[4] * partHeight), delay: 1, ease: Sine.easeOut });
@@ -73,6 +89,7 @@ $(function() {
 			Tween.to($wphone, 2, { top: "-200%", delay: 0.5 });
 			Tween.to($polygon, 2, { opacity: 0, top: "-200%", onComplete: unLock });
 			Tween.to($phone1, 1, { opacity: 0, yoyo: true });
+			$rolling.fadeOut();
 		}
 	];
 
@@ -121,6 +138,14 @@ $(function() {
 		return false;
 	});
 
+	$("a.rolling-tip").click(function() {
+		$("body").trigger("mousewheel");
+		return false;
+	}).mouseenter(function() {
+		rollingTween.pause();
+	}).mouseleave(function() {
+		rollingTween.play();
+	});
 
 });
 

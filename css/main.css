@@ -31,6 +31,58 @@ html {
 	margin: 0 auto;
 }
 
+.menus {
+	float: right;
+	margin-top: 6px;
+}
+.menus a {
+	margin: 0 5px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+.menus a:hover {
+	color: #179BA0;
+}
+.menus a.btn {
+	margin: 0 5px;
+	line-height: 25px;
+	height: 25px;
+	border-radius: 6px;
+	border: 1px solid #999;
+	padding: 2px 10px;
+	color: #179BA0;
+}
+.menus a.btn:hover {
+	background-color: #EBFFFF;
+}
+.menus a.btn:active {
+	background-color: #EBEBEB;
+}
+
+.rolling-tip {
+	width: 50px;
+	position: fixed;
+	display: block;
+	left: 50%;
+	bottom: -10px;
+	text-align: center;
+	z-index: 20;
+	color: black;
+	line-height: 2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.rolling-tip:hover {
+	color: #179BA0;
+}
+.rolling-tip .arrow {
+	width: 0;
+	display: inline-block;
+	border: 10px solid transparent;
+	border-top-color: #999;
+}
+
 #logo {
 /*	margin-left: 100px;*/
 /*	opacity: 1;*/
