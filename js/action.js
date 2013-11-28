@@ -149,3 +149,9 @@ $(function() {
 
 });
 
+function openRock() {
+	$(".overlay, .rockyou").fadeIn();
+}
+function closeRock() {
+	$(".overlay, .rockyou").fadeOut();
+}

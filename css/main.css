@@ -83,6 +83,57 @@ html {
 	border-top-color: #999;
 }
 
+.overlay, .rockyou {
+	display: none;
+}
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 50;
+}
+.rockyou {
+	position: absolute;
+	width: 500px;
+	height: 240px;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -120px;
+	background: white url(../img/sp.png) right 45px no-repeat;
+	z-index: 55;
+	color: black;
+}
+.rockyou .close-btn {
+	position: absolute;
+	display: block;
+	width: 14px;
+	height: 14px;
+	top: 5px;
+	right: 5px;
+	background: url(../img/sp.png) 0 -216px no-repeat;
+}
+
+.rockyou .close-btn:hover {
+	background: url(../img/sp.png) -17px -216px no-repeat;
+}
+
+.rockyou h1 {
+	text-align: center;
+	font-family: 'Arial Black';
+	font-size: 36px;
+	margin-top: 55px;
+}
+.rockyou p {
+	margin: 20px 0;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 14px;
+}
+
 #logo {
 /*	margin-left: 100px;*/
 /*	opacity: 1;*/
