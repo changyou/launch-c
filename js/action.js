@@ -17,6 +17,7 @@ $(function() {
 		$functions = $("#functions"),
 		$wheatear = $("#wheatear"),
 		$polygon = $("#polygon"),
+		$wphone = $(".wphone-imgs"),
 		$intro3 = $("#intro3"),
 		$st2 = $(".st_2");
 
@@ -58,12 +59,14 @@ $(function() {
 			TweenLite.to( $("body"), 1, { marginTop: -(pageDeltas[3] * partHeight), delay: 0.5, ease: Sine.easeOut });
 			Tween.to($phone1, 1, { opacity: 1, yoyo: true, skewX: "-30deg", transformOrigin: "0% 100%" });
 			Tween.staggerTo( $(".wphone"), 1.5, { opacity: 1, delay: 0.5 }, 0.5);
+			Tween.to($wphone, 2, { top: "20px"});
 			Tween.to($polygon, 1, { opacity: 1, top: "0%" });
 			Tween.to($intro3, 1, { opacity: 1, top: "420px", delay: 1.5} );
 		},
 		function step4() {
-			TweenLite.to( $("body"), 1, { marginTop: -(pageDeltas[4] * partHeight), delay: 0.5, ease: Sine.easeOut });
-			Tween.to( $(".wphone"), 2, { opacity: 0 });
+			TweenLite.to( $("body"), 1, { marginTop: -(pageDeltas[4] * partHeight), delay: 1, ease: Sine.easeOut });
+			Tween.to( $(".wphone"), 2, { opacity: 0, delay: 1 });
+			Tween.to($wphone, 2, { top: "-200%", delay: 0.5 });
 			Tween.to($polygon, 2, { opacity: 0, top: "-200%" });
 			Tween.to($phone1, 1, { opacity: 0, yoyo: true });
 		}
