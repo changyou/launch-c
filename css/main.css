@@ -117,11 +117,11 @@ html {
 	height: 14px;
 	top: 5px;
 	right: 5px;
-	background: url(../img/sp.png) 0 -216px no-repeat;
+	background: url(../img/sp.png) -17px -216px no-repeat;
 }
 
 .rockyou .close-btn:hover {
-	background: url(../img/sp.png) -17px -216px no-repeat;
+	background: url(../img/sp.png) 0 -216px no-repeat;
 }
 
 .rockyou h1 {
@@ -135,6 +135,12 @@ html {
 	text-align: center;
 	font-family: 'Arial';
 	font-size: 14px;
+}
+.rockyou a {
+	color: #179BA0;
+}
+.rockyou a:hover {
+	color: #179BA1;
 }
 
 #logo {
@@ -246,7 +252,7 @@ html {
 .wheatear {
 	position: absolute;
 	right: 50%;
-	margin-right: -684px;
+	margin-right: -856px;
 	opacity: 0;
 	z-index: 15;
 }
@@ -262,6 +268,7 @@ html {
 	position: absolute;
 	top: 72px;
 	left: 700px;
+	zoom: 0.8;
 }
 .wphone {
 	position: absolute;

@@ -78,7 +78,7 @@ $(function() {
 			Tween.to( $("body"), 1, { marginTop: -(pageDeltas[3] * partHeight), delay: 0.5, ease: Sine.easeOut });
 			Tween.to($phone1, 1, { opacity: 1, yoyo: true, skewX: "-30deg", transformOrigin: "0% 100%" });
 			Tween.staggerTo( $(".wphone"), 1.5, { opacity: 1, delay: 0.5 }, 0.5);
-			Tween.to($wphone, 2, { top: "20px"});
+			Tween.to($wphone, 2, { top: "140px"});
 			Tween.to($polygon, 1, { opacity: 1, top: "0%" });
 			Tween.to($intro3, 1, { opacity: 1, top: "420px", delay: 1.5, onComplete: unLock} );
 			$rolling.fadeIn();
