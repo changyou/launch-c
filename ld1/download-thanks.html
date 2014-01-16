@@ -36,17 +36,24 @@
 			position: relative;
 		}
 		.container {
+			padding: 1px;
 			background-color: #3369BB;
 		}
 		.container .wrap {
 			height: 453px;
-			background: url("bg.png") no-repeat;
+			text-align: center;
+		}
+		.container h1 {
+			color: white;
+			font-size: 32px;
+			margin-top: 45px;
+		}
+		.container p {
+			color: white;
+			font-size: 18px;
+			margin: 45px 0;
 		}
 		.btn {
-			position: absolute;
-			left: 35px;
-			top: 260px;
-			display: block;
 			padding: 7px 12px;
 			text-decoration: none;
 			color: white;
@@ -83,9 +90,13 @@
 </div>
 <div class="container">
 	<div class="wrap">
-		<a href="download-thanks.html?media=121040000" class="btn">
-		DOWNLOAD
-		</a>
+		<h1>Download CLauncher</h1>
+		<p>Simplify your phone (and life!) with just one click</p>
+		<p>
+			<a href="http://d.c-launcher.com/latest/clauncher/clauncher_121040000.apk" id="download_btn" class="btn" target="_blank">
+			DOWNLOAD
+			</a>
+		</p>
 	</div>
 </div>
 <div class="footer">
@@ -96,6 +107,17 @@
 		<a href="http://mobogenie.com/en-us/privacy-policy.html" target="_blank">Privacy Policy</a>
 	</div>
 </div>
+
+<script>
+	var downloadLink = document.getElementById("download_btn");
+	if(document.createEvent) {
+		var envObj = document.createEvent('MouseEvent');
+		envObj.initEvent('click', true, true);
+		downloadLink.dispatchEvent(envObj);
+	} else {
+		downloadLink.fireEvent("onclick");
+	}
+</script>
 
 <div style="display:none;">
 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5787962'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/stat.php%3Fid%3D5787962' type='text/javascript'%3E%3C/script%3E"));</script>
