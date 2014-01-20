@@ -1,0 +1,253 @@
+
+@font-face {
+	font-family: "hncn";
+	src: url("HelveticaNeueLTPro-XBlkCn.otf");
+}
+@font-face {
+	font-family: "hnex";
+	src: url("HelveticaNeueLTPro-UltLtEx.otf");
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+body {
+	width: 100%;
+}
+a, a:hover {
+	text-decoration: none;
+}
+
+.bd {
+	width: 1920px;
+	height: 750px;
+	margin: 0 auto;
+	background-color: white;
+	z-index: 999;
+}
+
+.hd {
+	height: 533px;
+	background: white url(../img/second/head.jpg) center top no-repeat;
+	.topBar {
+		width: 1000px;
+		height: 54px;
+		margin: 0 auto;
+		padding-top: 28px;
+		.logo, .logo:hover {
+			display: block;
+			float: left;
+			width: 87px;
+			height: 54px;
+			line-height: 54px;
+			margin-left: 41px;
+			padding-left: 47px;
+			color: #555555;
+			font-family: 'Arial';
+			font-size: 26px;
+			font-weight: 400;
+			letter-spacing: 0.5px;
+			text-indent: 13px;
+			background: white url(../img/second/logo-icon.png) left top no-repeat;
+		}
+		.menus {
+			float: right;
+			a {
+				display: block;
+				float: left;
+				width: 65px;
+				height: 24px;
+				line-height: 24px;
+				margin: 15px 18px;
+				color: #555555;
+				text-align: center;
+				font-family: 'Arial';
+				font-size: 18px;
+				font-weight: 300;
+				&:hover {
+					color: #FFFFFF;
+					background: #2ba28d; 
+				}
+			}
+		}
+	}
+	.container {
+		height: 450px;
+		background: url(../img/second/btn-bg.png) left bottom repeat-x;
+		.btnBg {
+			position: relative;
+			width: 1000px;
+			height: 398px;
+			margin: 0 auto;
+			padding-top: 7px;
+			.topPic {
+				height: 380px;
+				margin: 0;
+				li {
+					width: 1000px;
+					height: 385px;
+					margin: 0 auto;
+					.img {
+						float: left;
+						width: 400px;
+						height: 385px;
+						background: url(../img/second/phone1.jpg) 0 0 no-repeat;
+					}
+					.describ {
+						float: right;
+						margin: 50px 80px 0 0;
+						text-align: right;
+						h3, p {
+							height: 66px;
+							line-height: 66px;
+							font-family: 'Arial';
+							letter-spacing: 0.5px;
+							color: #555555;
+						}
+						h3 {
+							font-size: 50px;
+							letter-spacing: 0;
+						}
+						p {
+							height: 33px;
+							font-size: 18px;
+						}
+					}
+					&.cLauncher {
+						.img {
+							background: url(../img/second/phone1.jpg) 0 0 no-repeat;
+						}
+					}
+					&.optimization {
+						.img {
+							background: url(../img/second/phone2.jpg) 0 0 no-repeat;
+						}
+					}
+					&.cLocker {
+						.img {
+							background: url(../img/second/phone3.jpg) 0 0 no-repeat;
+						}
+					}
+					&.battery {
+						.img {
+							background: url(../img/second/phone4.jpg) 0 0 no-repeat;
+						}
+					}
+				}
+			}
+			a {
+				position: absolute;
+				right: 80px;
+				bottom: 75px;
+				width: 200px;
+				height: 66px;
+				line-height: 66px;
+				color: #ffffff;
+				background: #2ba28d;
+				font-family: 'Arial';
+				font-size: 24px;
+				letter-spacing: 0.5px;
+				text-align: center;
+			}
+		}
+		.btnHandle {
+			width: 1000px;
+			height: 45px;
+			margin: 0 auto;
+			a {
+				float: left;
+				width: 248px;
+				height: 45px;
+				line-height: 45px;
+				margin: 0 auto;
+				color: #1f1f1f;
+				border-left: #65e5cf solid 1px;
+				border-right: #247768 solid 1px;
+				text-align: center;
+				font-family: 'Arial';
+				font-size: 18px;
+				font-weight: 300;
+				&.crt {
+					color: #FFFFFF;
+					background: white url(../img/second/crt-bg.png) center top no-repeat;
+				}
+			}
+		}
+	}
+}
+
+.main {
+	.list {
+		width: 1000px;
+		height: 555px;
+		margin: 0 auto;
+		li {
+			float: left;
+			width: 500px;
+			height: 96px;
+			margin: 0 auto;
+			padding: 44px 0;
+			.imgbox {
+				float: left;
+				width: 96px;
+				height: 96px;
+				margin-left: 44px;
+				background: white url(../img/second/icon-main.png) 0 0 no-repeat;
+			}
+			.describ {
+				float: left;
+				width: 338px;
+				margin-left: 22px;
+				h3, p {
+					height: 32px;
+					line-height: 32px;
+					font-family: 'Arial';
+					letter-spacing: 0.5px;
+				}
+				h3 {
+					color: #1a9882;
+					font-size: 20px;
+				}
+				p {
+					color: #555555;
+					font-size: 16px;
+				}
+				a {
+					display: block;
+					width: 93px;
+					height: 23px;
+					line-height: 23px;
+					color: #ffffff;
+					background: #2ba28d;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+/*utils*/
+.transparent {
+	opacity: 0;
+}
+
+.hide {
+	display: none;
+}
+
+.absolute {
+	position: absolute;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
