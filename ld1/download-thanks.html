@@ -111,17 +111,13 @@
 
 <script>
 	var downloadLink = document.getElementById("download_btn");
-	// if(document.createEvent) {
-	// 	var envObj = document.createEvent('MouseEvent');
-	// 	envObj.initEvent('click', true, true);
-	// 	downloadLink.dispatchEvent(envObj);
-	// } else {
-	// 	downloadLink.fireEvent("onclick");
-	// }
-	setTimeout(function() {
-		window.location = downloadLink.getAttribute("href");
-	}, 2000);
-
+	if(document.createEvent) {
+		var envObj = document.createEvent('MouseEvent');
+		envObj.initEvent('click', true, true);
+		downloadLink.dispatchEvent(envObj);
+	} else {
+		downloadLink.fireEvent("onclick");
+	}
 </script>
 
 <div style="display:none;">

@@ -33,7 +33,7 @@ a, a:hover {
 
 .hd {
 	height: 533px;
-	background: url(../img/second/btn-bg.png) left bottom repeat-x;
+	background: url(../img/second/btn-bg.jpg) left bottom repeat-x;
 	.topBar {
 		width: 1000px;
 		height: 54px;
@@ -57,10 +57,11 @@ a, a:hover {
 		}
 		.menus {
 			float: right;
+			margin-right: 60px;
 			a {
 				display: block;
 				float: left;
-				width: 65px;
+				width: 90px;
 				height: 24px;
 				line-height: 24px;
 				margin: 15px 18px;
@@ -72,6 +73,9 @@ a, a:hover {
 				&:hover {
 					color: #FFFFFF;
 					background: #2ba28d; 
+				}
+				&.bbs {
+					width: 60px;
 				}
 			}
 		}
@@ -151,6 +155,10 @@ a, a:hover {
 				font-size: 26px;
 				letter-spacing: 0.5px;
 				text-align: center;
+				z-index: 1000;
+				&:hover {
+					background: #179BA0;
+				}
 			}
 		}
 		.btnHandle {
@@ -160,9 +168,9 @@ a, a:hover {
 			a {
 				float: left;
 				width: 248px;
-				height: 45px;
-				line-height: 45px;
-				margin: 0 auto;
+				height: 44px;
+				line-height: 44px;
+				margin: 1px auto 0;
 				color: #1f1f1f;
 				border-left: #65e5cf solid 1px;
 				border-right: #247768 solid 1px;
@@ -172,7 +180,7 @@ a, a:hover {
 				font-weight: 300;
 				&.crt {
 					color: #FFFFFF;
-					background: white url(../img/second/crt-bg.png) center top no-repeat;
+					background: white url(../img/second/crt-bg.jpg) center top no-repeat;
 				}
 			}
 		}
@@ -218,18 +226,26 @@ a, a:hover {
 				}
 				a {
 					display: block;
-					width: 93px;
+					width: 130px;
 					height: 24px;
 					line-height: 24px;
 					color: #ffffff;
-					background: #2ba28d;
+					background: #dddddd;
 					font-size: 14px;
 					text-align: center;
+					cursor: default;
 				}
 			}
 			&.cLauncher {
 				.imgbox {
 					background: url(../img/second/icon-main.png) 0 0 no-repeat;
+				}
+				a {
+					background: #2ba28d;
+					cursor: pointer;
+					&:hover {
+						background: #179BA0;
+					}
 				}
 			}
 			&.battery {
