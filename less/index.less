@@ -7,6 +7,14 @@
 	font-family: "hnex";
 	src: url("HelveticaNeueLTPro-UltLtEx.otf");
 }
+@font-face {
+	font-family: "hnlt";
+	src: url("HelveticaNeueLTStd-Lt.otf");
+}
+@font-face {
+	font-family: "MTCORSVA_0";
+	src: url("MTCORSVA_0.TTF");
+}
 
 html {
 	width: 100%;
@@ -81,7 +89,7 @@ a, a:hover {
 		}
 	}
 	.container {
-		width: 1000px;
+		width: 1002px;
 		height: 450px;
 		margin: 0 auto;
 		.btnBg {
@@ -102,20 +110,23 @@ a, a:hover {
 					}
 					.describ {
 						float: right;
-						margin: 50px 80px 0 0;
+						margin: 64px 80px 0 0;
 						text-align: right;
 						h3, p {
 							height: 66px;
 							line-height: 66px;
-							font-family: 'Arial';
 							letter-spacing: 0.5px;
 							color: #555555;
 						}
 						h3 {
-							font-size: 50px;
-							letter-spacing: 0;
+							font-family: "MTCORSVA_0";
+							font-size: 70px;
+							font-weight: 300;
+							letter-spacing: 3px;
 						}
 						p {
+							font-family: "hnlt";
+							font-weight: 200;
 							height: 33px;
 							font-size: 18px;
 						}
@@ -145,7 +156,7 @@ a, a:hover {
 			a {
 				position: absolute;
 				right: 80px;
-				bottom: 75px;
+				bottom: 87px;
 				width: 200px;
 				height: 66px;
 				line-height: 68px;
@@ -159,6 +170,26 @@ a, a:hover {
 				&:hover {
 					background: #179BA0;
 				}
+				&.fb {
+					right: 295px;
+					width: 66px;
+					background: url(../img/second/facebook.png) 0 0 no-repeat;
+				}
+			}
+		}
+		span {
+			display: inline;
+			width: 0;
+			height: 43px;
+			margin: 2px auto 0;
+			color: #1f1f1f;
+			&.first {
+				float: left;
+				border-right: #247768 solid 1px;
+			}
+			&.last {
+				float: right;
+				border-left: #65e5cf solid 1px;
 			}
 		}
 		.btnHandle {
@@ -168,16 +199,16 @@ a, a:hover {
 			a {
 				float: left;
 				width: 248px;
-				height: 44px;
+				height: 43px;
 				line-height: 44px;
-				margin: 1px auto 0;
+				margin: 2px auto 0;
 				color: #1f1f1f;
 				border-left: #65e5cf solid 1px;
 				border-right: #247768 solid 1px;
 				text-align: center;
-				font-family: 'Arial';
+				font-family: "hnlt";
 				font-size: 18px;
-				font-weight: 300;
+				font-weight: 400;
 				&.crt {
 					color: #FFFFFF;
 					background: white url(../img/second/crt-bg.jpg) center top no-repeat;
@@ -213,12 +244,13 @@ a, a:hover {
 				h3, p {
 					height: 32px;
 					line-height: 32px;
-					font-family: 'Arial';
+					font-family: 'hnlt';
 					letter-spacing: 0.5px;
 				}
 				h3 {
 					color: #1a9882;
 					font-size: 20px;
+					font-weight: 400;
 				}
 				p {
 					color: #555555;
@@ -229,7 +261,7 @@ a, a:hover {
 					width: 130px;
 					height: 24px;
 					line-height: 24px;
-					color: #ffffff;
+					color: #555555;
 					background: #dddddd;
 					font-size: 14px;
 					text-align: center;
@@ -241,6 +273,7 @@ a, a:hover {
 					background: url(../img/second/icon-main.png) 0 0 no-repeat;
 				}
 				a {
+					color: #FFFFFF;
 					background: #2ba28d;
 					cursor: pointer;
 					&:hover {
