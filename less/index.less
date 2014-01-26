@@ -153,7 +153,33 @@ a, a:hover {
 					}
 				}
 			}
-			a {
+			.social {
+				position: absolute;
+				bottom: 43px;
+				right: 80px;
+				z-index: 999;
+				a, span {
+					display: inline;
+					float: right;
+				}
+				a {
+					width: 29px;
+					height: 28px;
+					margin-right: 8px;
+					background: url(../img/second/facebook.png) 0 0 no-repeat;
+					&:hover {
+						opacity: 0.5;
+						background: url(../img/second/facebook.png) 0 0 no-repeat;
+					}
+				}
+				span {
+					width: 66px;
+					height: 28px;
+					margin: 0;
+					background: url(../img/second/g+.png) 0 0 no-repeat;
+				}
+			}
+			.download {
 				position: absolute;
 				right: 80px;
 				bottom: 87px;
@@ -166,14 +192,9 @@ a, a:hover {
 				font-size: 26px;
 				letter-spacing: 0.5px;
 				text-align: center;
-				z-index: 1000;
+				z-index: 998;
 				&:hover {
 					background: #179BA0;
-				}
-				&.fb {
-					right: 295px;
-					width: 66px;
-					background: url(../img/second/facebook.png) 0 0 no-repeat;
 				}
 			}
 		}
