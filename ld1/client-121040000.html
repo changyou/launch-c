@@ -55,8 +55,36 @@
 			border-radius: 6px;
 			background-color: #49A21D;
 		}
-		.btn:hover, .btn:active {
+ 		.btn:hover, .btn:active {
 			background-color: #316C13;
+		}
+		.title, .version {
+			position: absolute;
+		}
+		.version {
+			left: 25px;
+			top: 300px;
+			width: 200px;
+			line-height: 25px;
+			color: white;
+			font-size: 12px;
+			text-align: center;
+
+		}
+		.title {
+			left: 30px;
+			width: 300px;
+			line-height: 40px;
+			color: #fff8e3;
+			font-size: 36px;
+			text-align: left;
+			margin: 20px 15px;
+		}
+		strong {
+			display: block;
+			color: #ffeb68;
+			font-size: 75px;
+			line-height: 100px;
 		}
 		.footer {
 			width: 100%;
@@ -83,9 +111,11 @@
 </div>
 <div class="container">
 	<div class="wrap">
-		<a href="http://d.c-launcher.com/latest/clauncher/clauncher_121040000.apk" target="_blank" class="btn" onClick="top.window.location='./download-thanks.html'">
+		<h2 class="title">Make your Android Phone<br/><strong>FAST</strong></h2>
+		<a href="./clauncher_121040000.apk" target="_blank" class="btn" onClick="top.window.location='./download-thanks.html'">
 		DOWNLOAD
 		</a>
+		<p class="version">For Android 4.0 +<br/>Client version：2.0 | Size：6.74MB </p>
 	</div>
 </div>
 <div class="footer">
