@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><html class="no-js ie ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>C-launcher: Awesome launcher for Android!</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="http://www.c-launcher.com" />
+	<meta property="og:site_name" content="cLauncher"/>
+	<link href="../css/reset.css" type="text/css" rel="stylesheet" />
+	<link href="./css/index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="header clearfix">
+		<div class="wrap fix-inner">
+			<a href="http://www.c-launcher.com/main/ld1/clauncher_121040000.apk" class="download">Install CLauncher</a>
+			<a href="http://www.c-launcher.com" target="_blank" class="logo">C-Launcher.com</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="wrap" id="tabBox">
+			<div class="hd clearfix">
+				<ul class="fix-inner">
+					<li><a href="#" class="theme"><span>Theme</span></a></li>
+					<li><a href="#" class="wallpaper"><span>Wallpaper</span></a></li>
+					<li><a href="#" class="diy"><span>DIY</span></a></li>
+				</ul>
+			</div>
+			<div class="bd" id="tabBox-bd">
+				<div class="con">
+					<div class="cyou-themes" id="cyou-themes">
+						<a class="more" id="morethemes" href="http://www.c-launcher.com/theme/list.do">More</a>
+					</div>
+				</div>
+				<div class="con">
+					<div class="cyou-wallpapers" id="cyou-wallpapers">
+						<a class="more" id="morewallpapers" href="http://www.c-launcher.com/wallpaper/list.do">More</a>
+					</div>
+				</div>
+				<div class="con">
+					<div class="cyou-diy">
+						<h2 class="title">visit<br/><a href="http://www.c-launcher.com" target="_blank" ><strong>www.c-launcher.com</strong></a><br/><em>Create your theme</em></h2>
+						<img src="./img/diy.jpg" min-width="131px" min-height="232px" style="width: 100%" alt="Just for you"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/TouchSlide.1.1.js"></script>
+	<script type="text/javascript">
+		TouchSlide({
+			slideCell: '#tabBox',
+			endFun: function(i) { //高度自适应
+				var bd = document.getElementById('tabBox-bd');
+				bd.parentNode.style.height = bd.children[i].children[0].offsetHeight + 'px';
+				if (i > 0) {
+					bd.parentNode.style.transition = '200ms';//添加动画效果
+				}
+			}
+		})
+		function insertMore (dom, type) {
+			var more = dom;
+			var div = document.createElement("div");
+			div.innerHTML = more;
+			document.getElementById('cyou-'+type).insertBefore(div, document.getElementById('more'+type));
+		}
+		function getMoreTheme () {
+			var node = document.getElementById('cyou-themes').childNodes;
+			var length = 0;
+			for (var i = 0; i < node.length; i++) {
+				if (node[i].nodeType == 1 && node[i].tagName) {
+					length++;
+				}
+			}
+			if (length > 3) {
+				top.window.location='http://www.c-launcher.com/theme/list.do';
+			} else {
+				var moreTheme = '<div class="cyou-theme">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/theme.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+									<a class="title">\
+										<span class="new">Free</span>\
+										<p title="Just for you">Just for you</p>\
+									</a>\
+								</div>\
+								<div class="cyou-theme">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/theme.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+									<a class="title">\
+										<span class="new">Free</span>\
+										<p title="Just for you">Just for you</p>\
+									</a>\
+								</div>\
+								<div class="cyou-theme">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/theme.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+									<a class="title">\
+										<span class="new">Free</span>\
+										<p title="Just for you">Just for you</p>\
+									</a>\
+								</div>\
+								<div class="cyou-theme">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/theme.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+									<a class="title">\
+										<span class="new">Free</span>\
+										<p title="Just for you">Just for you</p>\
+									</a>\
+								</div>\
+								<div class="cyou-theme">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/theme.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+									<a class="title">\
+										<span class="new">Free</span>\
+										<p title="Just for you">Just for you</p>\
+									</a>\
+								</div>\
+								<div class="cyou-theme">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/theme.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+									<a class="title">\
+										<span class="new">Free</span>\
+										<p title="Just for you">Just for you</p>\
+									</a>\
+								</div>';
+				insertMore(moreTheme, 'themes');
+				document.getElementById('tabBox-bd').parentNode.style.height = document.getElementById('tabBox-bd').children[0].offsetHeight + 'px';
+			}
+		}
+		function getMorePaper () {
+			var node = document.getElementById('cyou-wallpapers').childNodes;
+			var length = 0;
+			for (var i = 0; i < node.length; i++) {
+				if (node[i].nodeType == 1 && node[i].tagName) {
+					length++;
+				}
+			}
+			if (length > 3) {
+				top.window.location='http://www.c-launcher.com/wallpaper/list.do';
+			} else {
+				var morePaper = '<div class="cyou-wallpaper">\
+									<a href="./img/0b7b02087bf40ad1d00782e6552c11dfa8ecced0.jpg">\
+										<img src="./img/0b7b02087bf40ad1d00782e6552c11dfa8ecced0.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+								</div>\
+								<div class="cyou-wallpaper">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/wallpaper.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+								</div>\
+								<div class="cyou-wallpaper">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/wallpaper.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+								</div>\
+								<div class="cyou-wallpaper">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/wallpaper.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+								</div>\
+								<div class="cyou-wallpaper">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/wallpaper.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+								</div>\
+								<div class="cyou-wallpaper">\
+									<a href="/theme/detail.do?themeId=399">\
+										<img src="./img/wallpaper.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+									</a>\
+								</div>';
+				insertMore(morePaper, 'wallpapers');
+				document.getElementById('tabBox-bd').parentNode.style.height = document.getElementById('tabBox-bd').children[1].offsetHeight + 'px';
+			}
+		}
+		function initTheme() {
+			var moreTheme = '<div class="cyou-theme">\
+								<a href="http://cdn.c-launcher.com/static/themes/48/52e763b9199cc8707d000004/52e763b9199cc8707d000004.apk">\
+									<img src="./img/theme/789.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+								<a class="title" href="http://cdn.c-launcher.com/static/themes/48/52e763b9199cc8707d000004/52e763b9199cc8707d000004.apk">\
+									<span class="new">Free</span>\
+									<p title="Passionate girl">girl</p>\
+								</a>\
+							</div>\
+							<div class="cyou-theme">\
+								<a href="http://cdn.c-launcher.com/static/themes/275/530ee9f0199cc8707d000043/0_1394451670486_2874696.apk">\
+									<img src="./img/theme/959.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+								<a class="title" href="http://cdn.c-launcher.com/static/themes/275/530ee9f0199cc8707d000043/0_1394451670486_2874696.apk">\
+									<span class="new">Free</span>\
+									<p title="Candy jar">Candy jar</p>\
+								</a>\
+							</div>\
+							<div class="cyou-theme">\
+								<a href="http://cdn.c-launcher.com/static/themes/24/5316ed7d5159357a76000008/5316ed7d5159357a76000008.apk">\
+									<img src="./img/theme/1180.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+								<a class="title" href="http://cdn.c-launcher.com/static/themes/24/5316ed7d5159357a76000008/5316ed7d5159357a76000008.apk">\
+									<span class="new">Free</span>\
+									<p title="Love is in the Eiffe">Love</p>\
+								</a>\
+							</div>\
+							<div class="cyou-theme">\
+								<a href="http://cdn.c-launcher.com/static/themes/40/5317dc87d975c98c76000014/5317dc87d975c98c76000014.apk">\
+									<img src="./img/theme/1197.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+								<a class="title" href="http://cdn.c-launcher.com/static/themes/40/5317dc87d975c98c76000014/5317dc87d975c98c76000014.apk">\
+									<span class="new">Free</span>\
+									<p title="RoboCop">RoboCop</p>\
+								</a>\
+							</div>\
+							<div class="cyou-theme">\
+								<a href="http://cdn.c-launcher.com/static/themes/520/5317ef085159357a7600000a/5317ef085159357a7600000a.apk">\
+									<img src="./img/theme/1203.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+								<a class="title" href="http://cdn.c-launcher.com/static/themes/520/5317ef085159357a7600000a/5317ef085159357a7600000a.apk">\
+									<span class="new">Free</span>\
+									<p title="Just for you">Just for you</p>\
+								</a>\
+							</div>\
+							<div class="cyou-theme">\
+								<a href="http://cdn.c-launcher.com/static/themes/312/53184a9b4368138761000009/53184a9b4368138761000009.apk">\
+									<img src="./img/theme/1224.jpg" min-width="77px" min-height="138px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+								<a class="title" href="http://cdn.c-launcher.com/static/themes/312/53184a9b4368138761000009/53184a9b4368138761000009.apk">\
+									<span class="new">Free</span>\
+									<p title="Night Sky">Night Sky</p>\
+								</a>\
+							</div>';
+			insertMore(moreTheme, 'themes');
+		}
+		function initPaper() {
+			var morePaper = '<div class="cyou-wallpaper">\
+								<a href="./img/wallpaper-d/0b7b02087bf40ad1d00782e6552c11dfa8ecced0.jpg">\
+									<img src="./img/wallpaper/0b7b02087bf40ad1d00782e6552c11dfa8ecced0.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+							</div>\
+							<div class="cyou-wallpaper">\
+								<a href="/theme/wallpaper-d/3dbfb9c882dd16f5c19d7b332f6c282a.jpg">\
+									<img src="./img/wallpaper/3dbfb9c882dd16f5c19d7b332f6c282a.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+							</div>\
+							<div class="cyou-wallpaper">\
+								<a href="/theme/wallpaper-d/6b17f4f2ab6065435c326dbff4387d22.jpg">\
+									<img src="./img/wallpaper/6b17f4f2ab6065435c326dbff4387d22.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+							</div>\
+							<div class="cyou-wallpaper">\
+								<a href="/theme/wallpaper-d/34cc4ca7bf862997760153d47711fb01.jpg">\
+									<img src="./img/wallpaper/34cc4ca7bf862997760153d47711fb01.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+							</div>\
+							<div class="cyou-wallpaper">\
+								<a href="/theme/wallpaper-d/4827.jpg">\
+									<img src="./img/wallpaper/4827.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+							</div>\
+							<div class="cyou-wallpaper">\
+								<a href="/theme/wallpaper-d/421385.jpg">\
+									<img src="./img/wallpaper/421385.jpg" min-width="128px" min-height="95px" style="width: 100%" alt="Just for you"/>\
+								</a>\
+							</div>';
+			insertMore(morePaper, 'wallpapers');
+		}
+		initTheme();
+		initPaper();
+	</script>
+	<script src="http://s23.cnzz.com/stat.php?id=5826178&web_id=5826178&t=z" language="JavaScript"></script>
+</body>
+</html>
