@@ -20,21 +20,17 @@
 	<style>
 		body {
 			display: block;
+			height: 100%;
 			margin: 0;
 			padding: 0;
 			font: normal 100% 'helvetica','arial','Microsoft Yahei';
-			background-color: #383838;
+			background: #3369bb;
 			min-width: 320px;
 		}
 		.header {
+			position: relative;
 			display: block;
 			background-color: #383838;
-		}
-		.header .wrap img {
-			vertical-align: middle;
-			border: 0;
-			-ms-interpolation-mode: bicubic;
-			-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 		.header .wrap a {
 			display: block;
@@ -43,70 +39,77 @@
 			/*width: 480px;*/
 			margin: 0 auto;
 			position: relative;
+			padding: 0;
+		}
+		.wrap img {
+			display: block;
+			vertical-align: middle;
+			border: 0;
+			-ms-interpolation-mode: bicubic;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 		.container {
 			clear: both;
 			display: block;
-			background-color: #3369BB;
+			background: #3369bb;
 		}
-		.container .wrap div {
-			position: absolute;
-			display: inline-block;
-			overflow: hidden;
+		.container img {
+			pointer-events: none;
 		}
 		.title, .version, .btn {
-			/*position: absolute;*/
+			position: absolute;
+			text-indent: -9999px;
 		}
 		.title {
-			width: 100%;
-			margin: 5% 0 0 5%;
-			color: #fff8e3;
-			line-height: 40px;
-			text-align: left;
-			font-size: 2em;
+			width: 95%;
+			top: 5%;
+			margin: 0;
+			margin-left: 5%;
+			color: #000000;
+			line-height: 1.6em;
+			text-align: center;
+			font-size: 1.6em;
 		}
-		strong {
-			display: block;
-			line-height: 100px;
-			color: #ffeb68;
-			font-size: 2.2em;
+		.version {
+			width: 40%;
+			top: 67%;
+			margin: 0;
+			margin-left: 10%;
+			color: white;
+			line-height: 1.2em;
+			text-align: left;
+			font-size: 0.75em;
+			text-align: center;
 		}
 		.btn {
-			/*position: absolute;*/
-			/*left: 25px;
-			top: 260px;*/
-			width: 50%;
-			margin: 5% 0 0 5%;
+			width: 37%;
+			height: 11%;
+			top: 57%;
 			display: block;
-			padding: 7px 12px;
+			margin-left: 11%;
 			color: white;
+			line-height: 2em;
 			text-align: center;
 			text-decoration: none;
 			font-size: 1.2em;
 			-moz-border-radius: 6px;
 			-webkit-border-radius: 6px;
 			border-radius: 6px;
-			background-color: #49A21D;
+			background-color: transparent;
 		}
  		.btn:hover, .btn:active {
-			background-color: #316C13;
-		}
-		.version {
-			color: white;
-			line-height: 20px;
-			margin-left: -20%;
-			text-align: center;
-			font-size: 0.5em;
-
+			/*background-color: #316C13;*/
 		}
 		.footer {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
 			clear: both;
 			display: block;
 			background-color: #383838;
 		}
 		.footer a {
 			margin: 0;
-			padding-bottom: 5px;
 			color: #2BA28D;
 			text-align: center;
 			text-decoration: none;
@@ -114,9 +117,10 @@
 		}
 		.footer p {
 			margin: 0;
-			padding-top: 5px;
+			padding: 0;
+			line-height: 1.5em;
 			text-align: center;
-			font-size: 0.8em;
+			font-size: 0.75em;
 		}
 	</style>
 </head>
@@ -124,19 +128,17 @@
 
 <div class="header">
 	<div class="wrap">
-		<a href="http://www.c-launcher.com/main/web/index.html" target="_blank"><img src="./logo.png" style="width:100%;" /></a>
+		<a href="http://www.c-launcher.com/main/web/index.html" target="_blank"><img src="http://www.c-launcher.com/main/ld1/logo.png" style="width:100%;" /></a>
 	</div>
 </div>
 <div class="container">
 	<div class="wrap">
-		<div>
-			<h2 class="title">Make your <br/> Android Phone <br/><strong> FAST </strong></h2>
-			<a href="http://cdn.c-launcher.com/static/static/download/latest/clauncher/1.0/clauncher_121040000.apk" target="_blank" class="btn" onClick="top.window.location='./download-thanks.html'">
-			DOWNLOAD
-			</a>
-			<p class="version">For Android 4.0 +<br/>Client version：2.0 | Size：6.74MB </p>
-		</div>
-		<img src="./bg.png" style="width:100%;" />
+		<h2 class="title"> Make your Android Phone FAST </h2>
+		<a onClick="top.window.location='http://www.c-launcher.com/main/ld1/download-thanks.html'" href="http://cdn.c-launcher.com/static/static/download/latest/clauncher/1.0/clauncher_121040000.apk" download="clauncher" class="btn">
+		DOWNLOAD
+		</a>
+		<p class="version">For Android 4.0 + Client version：2.0 | Size：6.74MB </p>
+		<img src="./bg.jpg" style="width:100%;" pointer-event/>
 	</div>
 </div>
 <div class="footer">
