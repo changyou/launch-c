@@ -22,7 +22,7 @@ function loadimg(s){
 };
 function loaded () {
   loadimg('.thum');
-  var myScroll = new IScroll('#slider');
+  // var myScroll = new IScroll('#slider');
 }
 
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
