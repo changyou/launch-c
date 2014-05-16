@@ -13,12 +13,16 @@ function loadimg(s){
 
   for (var i = 0, len = imglist.length; i < len; i++) {
     img = imglist[i];
+    img.src = img.dataset.src;
     if(img.complete || img.binded){ continue; }
     img.style.opacity = '0';
     img.style.transition = 'opacity .5s';
     onload(img);
   }
 };
-document.onload = function(){
+function loaded () {
   loadimg('.thum');
+  var myScroll = new IScroll('#slider');
 }
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
