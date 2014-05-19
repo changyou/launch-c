@@ -235,10 +235,38 @@ header {
 		padding-top: 5px;
 		list-style: none;
 		li {
-			width:100%;
+			width: 100%;
 			border-bottom: dashed 1px #b0afaf;
+			&:nth-child(n+4) {
+				a, span {
+					color: #464646;
+				}
+			}
+			&:hover {
+				.image {
+					display: block;
+				}
+			}
 			a {
 				display: block;
+			}
+			.title {
+				display: block;
+				width: 180px;
+				height: 20px;
+				padding: 5px 0;
+				line-height: 20px;
+				color: #0e6c81;
+				background-color: #fbfbfb;
+				text-align: left;
+				text-decoration: none;
+				font-size: 14px;
+				font-weight: 500;
+				letter-spacing: 0.5px;
+				word-break: keep-all;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
 			span {
 				display: inline-block;
@@ -258,32 +286,6 @@ header {
 				&.top-3 {
 					color:#14abe3;
 				}
-			}
-			&:nth-child(n+4) {
-				a {
-					color: #464646;
-				}
-				span {
-					color: #464646;
-				}
-			}
-			.title {
-				display: block;
-				width: 180px;
-				height: 20px;
-				padding: 5px 0;
-				line-height: 20px;
-				color: #0e6c81;
-				background-color: #fbfbfb;
-				text-align: left;
-				text-decoration: none;
-				font-size: 14px;
-				font-weight: 500;
-				letter-spacing: 0.5px;
-				word-break:keep-all;
-				white-space:nowrap;
-				overflow:hidden;
-				text-overflow:ellipsis;
 			}
 			.image {
 				clear: both;
