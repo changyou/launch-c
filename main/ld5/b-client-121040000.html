@@ -39,8 +39,6 @@
 			font: normal 100% 'helvetica','arial','Microsoft Yahei' !important;
 			min-width: 320px;
 			background: #24D0D4;
-			
-
 			-webkit-user-select: none;
 			-moz-user-select: none;
 			user-select: none;
@@ -51,11 +49,14 @@
 			width: 100%;
 			position: relative;
 			margin: 0 auto;
+			z-index: 999;
 		}
 		img {
 			position: absolute;
 			bottom: 0;
 			left: 0;
+			z-index: 0;
+			pointer-events: none;
 		}
 		.container {
 			text-shadow: 0 1px 1px #108e94;
@@ -103,6 +104,8 @@
 			display: block;
 			width: 110px;
 			text-align: center;
+			line-height: 41px;
+			height: 41px;
 		}
 
 		.appInfo {
@@ -120,7 +123,6 @@
 		.appInfo span {
 			display: inline-block;
 			margin-top: 13px;
-			font-size: 0.75em
 		}
 
 
@@ -148,27 +150,23 @@
 			text-align: center;
 			font-size: 0.75em;
 		}
-		/*@media (max-height: 480px) {
+		@media (max-height: 480px) {
 			html {
 				height: auto;
 				min-height: auto;
 			}
-			body {
-				min-height: 480px;
-			}
-		}
-		@media (max-width: 360px) {
-			body {
-				min-height: 480px;
-			}
-
 		}
 		@media (max-width: 320px) {
 			body {
 				min-height: 480px;
 			}
-
-		}*/
+			img {
+				top: 220px;
+			}
+			.footer {
+				bottom: -110px;
+			}
+		}
 	</style>
 
 
@@ -185,8 +183,7 @@
 				onClick="top.window.location='http://www.c-launcher.com/main/ld3/b-download-thanks.html'"><span>Download</span></a>
 		</div>
 		<div class="appInfo">
-			<span> Free for android 4.0+ <br/>
-				Client version：2.0 | Size：6.74MB</span>
+			<span> for android 4.0+ <br/> Client version：2.0 | Size：6.74MB </span>
 		</div>
 	</div>
 </div>
@@ -211,49 +208,6 @@
 
    document.domain='c-launcher.com';
 </script>
-
-<!-- Google Code for &#19979;&#36733;clauncher Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 969448530;
-var google_conversion_language = "en";
-var google_conversion_format = "2";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "hnewCL721QcQ0riizgM";
-var google_conversion_value = 0;
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="../js/plugins/css3-mediaqueries.js">
-</script>
-<![endif]-->
-<noscript>
-	<div style="display:inline;">
-		<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/969448530/?value=0&amp;label=hnewCL721QcQ0riizgM&amp;guid=ON&amp;script=0"/>
-	</div>
-</noscript>
-
-<!-- Google Code for download Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 974908357;
-var google_conversion_language = "en";
-var google_conversion_format = "2";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "VhQdCLvX5QcQxdfv0AM";
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/974908357/?label=VhQdCLvX5QcQxdfv0AM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
 
 <div style="display:none;">
 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5787962'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/stat.php%3Fid%3D5787962' type='text/javascript'%3E%3C/script%3E"));</script>
