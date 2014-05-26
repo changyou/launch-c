@@ -3,7 +3,7 @@ var config = {
     // "Congress-Party.apk",
     "BJP.apk",
     // "Congress-Rahul-Gandh.apk",
-    "BJP-Party.apk",
+    // "BJP-Narendra-Modi.apk",
     // "CPIM-Political-Party.apk",
     // "TMC-Mamta-Bannerjee.apk",
     // "SP-Samajwadi-Party.apk",
@@ -52,5 +52,6 @@ function handleDownload(){
 function loaded () {
   handleDownload();
   loadimg('.thum');
+  document.getElementById("youtube").innerHTML = '<iframe width="480" height="270" src="//www.youtube.com/embed/Ic4TprJ-3KM" frameborder="0" allowfullscreen></iframe>';
 }
 

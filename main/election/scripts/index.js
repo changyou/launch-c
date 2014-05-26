@@ -23,6 +23,7 @@ function loadimg(s){
 function loaded () {
   loadimg('.thum');
   // var myScroll = new IScroll('#slider');
+  document.getElementById("youtube").innerHTML = '<iframe width="480" height="270" src="//www.youtube.com/embed/Ic4TprJ-3KM" frameborder="0" allowfullscreen></iframe>';
 }
 
 // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
