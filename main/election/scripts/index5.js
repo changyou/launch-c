@@ -3,7 +3,7 @@ var config = {
     // "Congress-Party.apk",
     "BJP.apk",
     // "Congress-Rahul-Gandh.apk",
-    "BJP-Narendra-Modi.apk",
+    "BJP-Party.apk",
     // "CPIM-Political-Party.apk",
     // "TMC-Mamta-Bannerjee.apk",
     // "SP-Samajwadi-Party.apk",
