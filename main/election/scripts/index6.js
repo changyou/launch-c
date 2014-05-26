@@ -1,12 +1,12 @@
 var config = {
   "apkName": ["BJP-political-party.apk",
-    "Congress-Party.apk",
+    // "Congress-Party.apk",
     "BJP.apk",
-    "Congress-Rahul-Gandh.apk",
+    // "Congress-Rahul-Gandh.apk",
     "BJP-Narendra-Modi.apk",
-    "CPIM-Political-Party.apk",
-    "TMC-Mamta-Bannerjee.apk",
-    "SP-Samajwadi-Party.apk",
+    // "CPIM-Political-Party.apk",
+    // "TMC-Mamta-Bannerjee.apk",
+    // "SP-Samajwadi-Party.apk",
     "BJP-Modi-Sarkar.apk"
   ],
   "baseUrl": "http://d.c-launcher.com/apk/0516/37007/",
