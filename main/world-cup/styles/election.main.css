@@ -1,0 +1,450 @@
+.small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: -20px
+}
+.layout .selected:before {
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    content: '\e802';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #24979d;
+    z-index: 20;
+    background: #fff;
+    border-radius: 100%
+}
+.layout .selected {
+    position: relative
+}
+.half-width {
+    width: 50%
+}
+.form-control:focus {
+    border-color: #13b5b1
+}
+.cy-input-l {
+    height: 64px;
+    line-height: 18px;
+    font-size: 18px
+}
+.brand-bg {
+    background: #24979d
+}
+.cy-dot-btn {
+    padding: 0;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #bbb;
+    border-radius: 50%
+}
+.cy-dot-btn.active {
+    background: #2a8c93
+}
+.cy-file-btn {
+    display: inline-block;
+    width: 160px;
+    height: 60px;
+    padding-top: 10px;
+    text-align: center;
+    color: #2a8c93;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5
+}
+.cy-file-btn .icon {
+    font-size: 1.5em
+}
+.menu-bar {
+    text-align: center
+}
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative
+}
+.swipe-wrap>div {
+    float: left;
+    width: 100%;
+    position: relative
+}
+.menu-bar, .sub-menu-bar {
+    text-align: center
+}
+.loader {
+    width: 100%;
+    position: relative;
+    display: inline-block
+}
+.loader .thum {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+.loader .loading {
+    width: 100%
+}
+#gotop {
+    display: none;
+    width: 68px;
+    height: 68px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: transparent url(./images/back-to-top.png) no-repeat -76px 0
+}
+#gotop:active {
+    background: transparent url(./images/299826b5.back-to-top.png) no-repeat 0 0
+}
+.page-store {
+    background: #e7e7e7;
+    height: 100%
+}
+.page-store .navbar {
+    margin-bottom: 0
+}
+.page-store .more {
+    text-align: center;
+    margin-bottom: 20px
+}
+.page-store .layout {
+    padding-top: 105px
+}
+.page-store .layout .info {
+    width: 100%
+}
+.page-store .menu-bar {
+    z-index: 999;
+    height: 50px;
+    box-shadow: 1px 1px 3px #ddd;
+    -moz-box-shadow: 1px 1px 3px #ddd;
+    -webkit-box-shadow: 1px 1px 3px #ddd
+}
+.page-store .menu-bar .btn {
+    border-radius: 0;
+    font-size: 1.5em;
+    border: none;
+    border-right: 1px solid #ddd;
+    box-shadow: none;
+    border-bottom: 2px solid transparent
+}
+.page-store .menu-bar .active {
+    color: #2a8c93;
+    background: #fff;
+    border-bottom-color: #2a8c93
+}
+.theme .layout-container:active {
+    box-shadow: 0 0 8px 1px #2a8c93;
+    -moz-box-shadow: 0 0 8px 1px #2a8c93;
+    -webkit-box-shadow: 0 0 8px 1px #2a8c93
+}
+.theme .layout-container {
+    width: 30%;
+    margin: 20px 0 0 2%;
+    background: #fff
+}
+.page-package .wallpaper .layout-container {
+    height: auto
+}
+.wallpaper .layout-container {
+    height: 160px;
+    overflow: hidden;
+    padding: 0;
+    background: #e7e7e7;
+    width: 48%;
+    margin: 10px .5% 0
+}
+.wallpaper .layout-container:active {
+    box-shadow: 0 0 8px 1px #2a8c93;
+    -moz-box-shadow: 0 0 8px 1px #2a8c93;
+    -webkit-box-shadow: 0 0 8px 1px #2a8c93
+}
+.wallpaper .jscroll-inner {
+    padding-top: 10px
+}
+.wallpaper .layout-container .loading {
+    width: auto;
+    height: 180px
+}
+.theme-preview {
+    clear: both
+}
+.layout .col-xs-4 {
+    padding: 0 5px
+}
+.layout .col-xs-6 {
+    padding: 0 2px
+}
+.wallpaper .loader {
+    height: 150px;
+    overflow: hidden
+}
+html, body {
+    height: 100%
+}
+#wallpaper-camera {
+    position: absolute;
+    left: 0;
+    visibility: hidden
+}
+#wallpaper-image {
+    position: absolute;
+    right: 0;
+    visibility: hidden
+}
+.navbar-brand.ellipsis {
+    padding-left: 0
+}
+.avatar {
+    width: 20px;
+    height: 20px
+}
+.navbar-brand.ellipsis {
+    width: 200px
+}
+body {
+    display: block;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font: 400 100% arial, 'Microsoft Yahei';
+    color: #fef4e9;
+    background: #fafafa;
+    overflow: hidden;
+    -webkit-transition: all .5s ease-in
+}
+body.normal {
+    -webkit-transform: rotate(0deg)
+}
+body.right {
+    -webkit-transform: rotate(270deg)
+}
+body.left {
+    -webkit-transform: rotate(90deg)
+}
+body.flipped {
+    -webkit-transform: rotate(180deg)
+}
+.page-index .layout {
+    overflow: hidden
+}
+.menu-bar .btn:active {
+    background: #fff
+}
+.disabled {
+    background: #ddd
+}
+.navbar-default {
+    padding: 0 10px;
+    overflow: hidden
+}
+.navbar-default .navbar-brand {
+    color: inherit;
+    padding-top: 18px;
+    padding-bottom: 18px
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: inherit
+}
+.navbar-default .logo {
+    background: url(./images/logo.png) 0 center no-repeat;
+    background-size: 25%;
+    padding-left: 50px;
+    padding-right: 0
+}
+.diy-footer {
+    height: 80px;
+    box-shadow: 1px -3px 3px #ddd;
+    -moz-box-shadow: 1px -3px 3px #ddd;
+    -webkit-box-shadow: 1px -3px 3px #ddd;
+    position: fixed;
+    bottom: 0
+}
+.diy-footer .active {
+    background-color: #2a8c93;
+    color: #fef4e9
+}
+.diy-footer .active:active {
+    background-color: #2a8c93
+}
+.diy-footer .btn {
+    border-radius: 0
+}
+.form {
+    padding: 0 35px;
+    color: #666;
+    font-size: 15px
+}
+h1 {
+    color: #000;
+    text-align: center
+}
+.btn.cy-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #35b0b6;
+    color: #fff;
+    width: 100%;
+    border-color: #52c7cc;
+    border-bottom: 5px solid #298a8f;
+    outline: 0
+}
+.btn.cy-btn:active {
+    border-bottom: 5px solid #35b0b6
+}
+@media (min-width: 768px) {
+    .navbar-header {
+        float: none
+   }
+}
+.preview-container {
+    display: block;
+    text-align: center
+}
+.scroll, .layout {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+.fixed {
+    position: fixed;
+    z-index: 300;
+    width: 100%
+}
+.jscroll-inner:after {
+    clear: both
+}
+.jscroll-inner .cy-btn {
+    width: 60%;
+    margin: 20px auto
+}
+.jscroll-inner .more {
+    margin-top: 20px;
+    color: #999;
+    font-size: 3em;
+    text-align: center
+}
+.jscroll-inner a {
+    text-decoration: none;
+    color: #999
+}
+.jscroll-added {
+    clear: both;
+    min-height: 25px
+}
+.jscroll-added .more {
+    margin: 20px 0;
+    color: #999;
+    font-size: 3em;
+    text-align: center
+}
+.jscroll-added a {
+    text-decoration: none;
+    color: #999
+}
+.more {
+    clear: both
+}
+.more .cy-btn {
+    width: 50%;
+    margin-top: 20px
+}
+.layout:before, .layout:after {
+    display: table;
+    content: ' ';
+    clear: both
+}
+.layout .layout-container {
+    text-align: center;
+    padding: 5px;
+    color: #000;
+    font-size: 1.2em;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    -moz-box-shadow: 1px 1px 3px #ccc;
+    -webkit-box-shadow: 1px 1px 3px #ccc
+}
+.layout .layout-container a {
+    display: inline-block;
+    width: 100%
+}
+.layout .layout-container img {
+    width: 100%;
+    background: #e7e7e7
+}
+.layout .layout-container .info {
+    margin: 10px 0 0;
+    text-align: left
+}
+.layout .layout-container .price {
+    color: #2a8c93
+}
+.layout .selected {
+    box-shadow: 0 0 8px 1px #2a8c93;
+    -moz-box-shadow: 0 0 8px 1px #2a8c93;
+    -webkit-box-shadow: 0 0 8px 1px #2a8c93
+}
+.splider {
+    padding: 0;
+    height: 20px;
+    border-right: 1px solid #23abb3;
+    border-left: 1px solid #197f84
+}
+.splider.navbar-brand {
+    margin-top: 10px
+}
+.ellipsis {
+    display: inline-block;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.swipe {
+    height: 100%
+}
+.swipe-wrap {
+    height: 100%
+}
+.page-store .layout {
+    padding-top: 55px;
+    padding-bottom: 10px;
+    background: #e7e7e7;
+    height: auto;
+}
+.layout-container .ellipsis {
+    width: 99%;
+}
+.layout .layout-container .loading {
+    width: 134px;
+    height: 240px;
+}
+.fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+}
