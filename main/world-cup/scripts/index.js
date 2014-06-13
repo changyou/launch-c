@@ -39,6 +39,9 @@ var loadContent = function() {
       if (result.code == "100") {
         var themeList = '';
         var length = result.themes.length;
+        if(length<1){
+          stopLoading();
+        }
         $.each(result.themes, function(n, e) {
           if (length == n + 1){
             loadOption.lastId = e.id;
