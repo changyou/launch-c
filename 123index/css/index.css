@@ -34,6 +34,16 @@ body {
 	height: 32px;
 	background: url("../imgs/spri.png") 0 -38px no-repeat;
 }
+.icon-google {
+	width: 42px;
+	height: 42px;
+	background: url("../imgs/spri.png") 0 -80px no-repeat;
+}
+.icon-search {
+	width: 42px;
+	height: 42px;
+	background: url("../imgs/spri.png") 0 -130px no-repeat;
+}
 
 .hb-c1.panel h2 {
 	border-color: #8fd182;
@@ -57,17 +67,35 @@ body {
 	border-radius: 6px;
 	overflow: hidden;
 	background-color: #fff;
+	position: relative;
+}
+.topSearch .icon-google {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 .topSearch .input-search {
 	height: 52px;
-	width: 600px;
-
+	width: 500px;
 	padding: 16px;
 	font-size: 32px;
 
 	border: none;
 	outline: none;
 	background-color: #fff;
+}
+.topSearch .icon-search:after {
+	content: ' ';
+	position: absolute;
+	height: 52px;
+	right: 84px;
+	top: 16px;
+	border-left: 1px solid #d3d3d3;
+}
+.topSearch .icon-search {
+	float: right;
+	margin-top: 24px;
+	margin-right: 24px;
 }
 
 
