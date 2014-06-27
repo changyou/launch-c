@@ -94,7 +94,7 @@
     <div class="panel panel-links hb-c2">
       <header>
         <h2>Information</h2>
-        <icon class="icon icon-arrow-down"></icon>
+        <icon class="icon icon-arrow"></icon>
       </header>
 
       <div class="panel-content">
@@ -136,10 +136,10 @@
         </table>
       </div>
     </div>
-    <div class="panel panel-links collapse hb-c2">
+    <div class="panel panel-links hb-c2">
       <header>
         <h2>Information</h2>
-        <icon class="icon icon-arrow-up"></icon>
+        <icon class="icon icon-arrow"></icon>
       </header>
 
       <div class="panel-content">
@@ -185,7 +185,7 @@
     <div class="panel panel-links hb-c1">
       <header>
         <h2>Entertainment</h2>
-        <icon class="icon icon-arrow-down"></icon>
+        <icon class="icon icon-arrow"></icon>
       </header>
 
       <div class="panel-content">
@@ -251,5 +251,14 @@
     </div>
 
   </div>
+
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script>
+$(function() {
+  $(".panel header").click(function() {
+    $(this).parent().toggleClass("collapse");
+  })
+})
+</script>
 </body>
 </html>

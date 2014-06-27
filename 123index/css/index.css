@@ -24,12 +24,12 @@ body {
 	display: inline-block;
 }
 
-.icon-arrow-down {
+.icon-arrow {
 	width: 32px;
 	height: 32px;
 	background: url("../imgs/spri.png") 0 0 no-repeat;
 }
-.icon-arrow-up {
+.collapse .icon-arrow {
 	width: 32px;
 	height: 32px;
 	background: url("../imgs/spri.png") 0 -38px no-repeat;
@@ -168,6 +168,8 @@ body {
 .panel-links .panel-content {
 	padding: 0 12px;
 	overflow: hidden;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .panel-links.collapse .panel-content {
 	height: 0;
