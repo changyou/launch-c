@@ -17,6 +17,7 @@ body {
 	background-color: #fff;
 	border-radius: 4px;
 	border-bottom: 2px solid rgba(0,0,0,0.1);
+	overflow: hidden;
 }
 
 .icon {
@@ -144,8 +145,7 @@ body {
 	position: relative;
 }
 .panel-links header:active {
-	background-color: #c2d0c8;
-	opacity: 0.4;
+	background-color: rgba(194,208,200, 0.4);
 }
 .panel-links header h2 {
 	height: 52px;
