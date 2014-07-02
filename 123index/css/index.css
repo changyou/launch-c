@@ -122,6 +122,7 @@ body {
 	text-decoration: none;
 	text-align: center;
 	display: inline-block;
+	vertical-align: top;
 }
 .panel-icons .list-item img {
 	width: 80px;
