@@ -1,9 +1,7 @@
 html {
-	/*height: 100%;*/
-	font-style: 100%;
+	font-size: 100%;
 }
 body {
-	/*height: 100%;*/
 	height: auto;
 	font-family: Arial;
 	font-size: 1em;
@@ -11,24 +9,19 @@ body {
 
 .container {
 	width: 100%;
-	/*height: 100%;*/
 	height: auto;
-	/*padding-top: 12px;*/
 	padding-top: 0.75em;
 	background-color: #EDF2F1;
 }
 .panel {
-	/*margin: 24px 24px 0;*/
 	margin: 1.5em 1.5em 0;
+
 	box-sizing: border-box;
 	background-color: #fff;
-	/*border-radius: 4px;*/
-	border-radius: 0.25em;
+	border-radius: 4px;
 	border-bottom: 2px solid rgba(0,0,0,0.1);
-	border-bottom: 0.125em solid rgba(0,0,0,0.1);
 	overflow: hidden;
 }
-
 
 .icon {
 	vertical-align: middle;
@@ -36,148 +29,15 @@ body {
 }
 
 .icon-arrow {
-	/*width: 32px;
-	height: 32px;*/
 	width: 2em;
 	height: 2em;
 	background: url("../imgs/spri.png") 0 0 no-repeat;
 }
 .collapse .icon-arrow {
-	/*width: 32px;
-	height: 32px;*/
 	width: 2em;
 	height: 2em;
 	background: url("../imgs/spri.png") 0 -38px no-repeat;
 }
-/*.icon-google {
-	width: 42px;
-	height: 42px;
-	background: url("../imgs/spri.png") 0 -80px no-repeat;
-}
-.icon-search {
-	width: 42px;
-	height: 42px;
-	background: url("../imgs/spri.png") 0 -130px no-repeat;
-}*/
-
-.hb-c1.panel h2,.hb-c2.panel h2,.hb-c3.panel h2,.hb-c4.panel h2,.hb-c5.panel h2{
-	display: block;
-	/*height: 80px;
-	line-height: 80px;
-	margin: 0 12px;*/
-	
-	height: 2.222em;
-	line-height: 2.222em;
-	margin: 0 0.333em;
-
-}
-
-.hb-c1.panel h2 {
-	color: #42C9A6;
-	/*border-bottom: 1px solid #42C9A6;*/
-	border-bottom: 0.028em solid #42C9A6;
-}
-.hb-c2.panel h2 {
-	color: #B564C3;
-	/*border-bottom: 1px solid #B564C3;*/
-	border-bottom: 0.028em solid #B564C3;
-}
-.hb-c3.panel h2 {
-	color: #FD826A;
-	/*border-bottom: 1px solid #FD826A;*/
-	border-bottom: 0.028em solid #FD826A;
-}
-.hb-c4.panel h2 {
-	color: #4DBAE2;
-	/*border-bottom: 1px solid #4DBAE2;*/
-	border-bottom: 0.028em solid #4DBAE2;
-}
-.hb-c5.panel h2 {
-	color: #9FD127;
-	/*border-bottom: 1px solid #9FD127;*/
-	border-bottom: 0.028em solid #9FD127;
-
-}
-
-
-/*
-	top search bar
-*/
-/*.topSearch {
-	padding: 14px 15px;
-	border-top: 1px solid #209a54;
-	background-color: #A6DAC7;
-}
-.search-bar {
-	height: 84px;
-	border-radius: 6px;
-	overflow: hidden;
-	background-color: #fff;
-	position: relative;
-}
-.topSearch .icon-google {
-	float: left;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-.topSearch .input-search {
-	height: 52px;
-	width: 500px;
-	padding: 16px;
-	font-size: 32px;
-
-	border: none;
-	outline: none;
-	background-color: #fff;
-}
-.topSearch .icon-search:after {
-	content: ' ';
-	position: absolute;
-	height: 52px;
-	right: 84px;
-	top: 16px;
-	border-left: 1px solid #d3d3d3;
-}
-.topSearch .icon-search {
-	float: right;
-	margin-top: 24px;
-	margin-right: 24px;
-}*/
-
-
-/*
-	icon list
-*/
-/*.panel-icons {
-	margin-top: 24px;
-}
-
-.panel-icons ul {
-	margin: 0;
-	padding: 0;
-}
-
-.panel-icons .list-item {
-	width: 120px;
-	display: inline-block;
-	margin-left: 11px;
-	padding: 32px 0 24px;
-}
-.panel-icons .list-item a {
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-	vertical-align: top;
-}
-.panel-icons .list-item img {
-	width: 80px;
-	height: 80px;
-	margin: 0 auto 12px;
-}
-.panel-icons .list-item span {
-	font-size: 24px;
-	color: #565656;
-}*/
 
 /*
 	link list
@@ -186,10 +46,6 @@ body {
 }
 
 .panel-links header {
-	/*height: 72px;
-	line-height: 72px;*/
-	/*height: 80px;
-	line-height: 80px;*/
 	height: 5em;
 	line-height: 5em;
 	position: relative;
@@ -197,31 +53,45 @@ body {
 .panel-links header:active {
 	background-color: rgba(194,208,200, 0.4);
 }
+
 .panel-links header h2 {
-	/*height: 52px;
-	line-height: 52px;*/
-	height: 1.444em;
-	line-height: 1.444em;
-	margin: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 0.333em;
 	padding: 0;
-	display: inline-block;
 	vertical-align: middle;
-	/*text-indent: 24px;*/
 	text-indent: 0.667em;
 	font-weight: 200;
-	/*font-size: 36px;*/
 	font-size: 2.25em;
+}
+
+.hb-c1.panel h2 {
+	color: #42C9A6;
+	border-bottom: 1px solid #42C9A6;
+}
+.hb-c2.panel h2 {
+	color: #B564C3;
+	border-bottom: 1px solid #B564C3;
+}
+.hb-c3.panel h2 {
+	color: #FD826A;
+	border-bottom: 1px solid #FD826A;
+}
+.hb-c4.panel h2 {
+	color: #4DBAE2;
+	border-bottom: 1px solid #4DBAE2;
+}
+.hb-c5.panel h2 {
+	color: #9FD127;
+	border-bottom: 1px solid #9FD127;
 }
 .panel-links header .icon {
 	position: absolute;
-	/*right: 24px;
-	top: 24px;*/
 	right: 1.5em;
 	top: 1.5em;
 }
 
 .panel-links .panel-content {
-	/*padding: 0 12px;*/
 	padding: 0 0.75em;
 	overflow: hidden;
 	-webkit-transition: all 0.5s;
@@ -236,18 +106,15 @@ body {
 }
 
 .panel-links tr:nth-child(1){
-	/*border-bottom: 1px solid #CCCCCC;*/
-	border-bottom: 0.0625em solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
 }
 
 .panel-links tr:nth-child(4){
-	/*border-bottom: 1px solid #CCCCCC;*/
-	border-bottom: 0.0625em solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
 }
 
 .panel-links tr{
-	/*border-bottom: 1px solid #E5E5E5;*/
-	border-bottom: 0.0625em solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
 }
 
 .panel-links tr:nth-child(6){
@@ -256,13 +123,10 @@ body {
 
 .panel-links td,
 .panel-links th{
-	/*width: 120px;*/
-	/*height: 80px;*/
 	height: 2.857em;
 	overflow: hidden;
 	box-sizing: border-box;
 
-	/*font-size: 28px;*/
 	font-size: 1.75em;
 	text-align: center;
 	white-space: nowrap;
@@ -271,72 +135,50 @@ body {
 
 .panel-links h4{
 	margin: 0;
-/*	height: 80px;
-	line-height: 80px;*/
-
-	height: 2.857em;
+	height: 100%;
 	line-height: 2.857em;
 	text-align: left;
-	/*padding-left: 15px;*/
 	padding-left: 0.536em;
 }
 
 .panel-links .circle{
 	float: left;
-	/*width: 20px;
-	height: 20px;
-	margin: 28px 15px 0 0;*/
-
 	width: 0.714em;
 	height: 0.714em;
 	margin: 1em 0.536em 0 0;
-
-	/*-webkit-border-radius: 20px;
-	border-radius: 20px;*/
-
 	-webkit-border-radius: 0.714em;
 	border-radius: 0.714em;
 }
 
 .panel-links .circle1{
-	/*border: 2px solid #42C9A6;*/
-	border: 0.1em solid #42C9A6;
+	border: 2px solid #42C9A6;
 }
 .panel-links .circle2{
-	/*border: 2px solid #9ADA6B;*/
-	border: 0.1em solid #9ADA6B;
+	border: 2px solid #9ADA6B;
 }
 .panel-links .circle3{
-	/*border: 2px solid #B768C4;*/
-	border: 0.1em solid #B768C4;
+	border: 2px solid #B768C4;
 }
 .panel-links .circle4{
-	/*border: 2px solid #F47FCF;*/
-	border: 0.1em solid #F47FCF;
+	border: 2px solid #F47FCF;
 }
 .panel-links .circle5{
-	/*border: 2px solid #FD826A;*/
-	border: 0.1em solid #FD826A;
+	border: 2px solid #FD826A;
 }
 .panel-links .circle6{
-	/*border: 2px solid #FDBA6A;*/
-	border: 0.1em solid #FDBA6A;
+	border: 2px solid #FDBA6A;
 }
 .panel-links .circle7{
-	/*border: 2px solid #4DBAE2;*/
-	border: 0.1em solid #4DBAE2;
+	border: 2px solid #4DBAE2;
 }
 .panel-links .circle8{
-	/*border: 2px solid #67E2F8;*/
-	border: 0.1em solid #67E2F8;
+	border: 2px solid #67E2F8;
 }
 .panel-links .circle9{
-	/*border: 2px solid #9FD127;*/
-	border: 0.1em solid #9FD127;
+	border: 2px solid #9FD127;
 }
 .panel-links .circle10{
-	/*border: 2px solid #D9E877;*/
-	border: 0.1em solid #D9E877;
+	border: 2px solid #D9E877;
 }
 
 .panel-links .last:after{
@@ -349,7 +191,6 @@ body {
 	text-align: center;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-
 }
 
 .panel-links td{
@@ -361,21 +202,8 @@ body {
 	position: absolute;
 	height: 60%;
 	right: 0;
-	/*top: 20px;*/
 	top: 0.714em;
-	/*border-right: 1px solid #ccc;*/
-	border-right: 0.036em solid #ccc;
-}
-
-.panel-links td:after {
-	content: ' ';
-	position: absolute;
-	height: 60%;
-	right: 0;
-	/*top: 20px;
-	border-right: 1px solid #ccc;*/
-	top: 0.714em;
-	border-right: 0.036em solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 .panel-links th {
@@ -384,13 +212,10 @@ body {
 }
 .panel-links th:after {
 	content: ' ';
-	position: absolute;
-	height: 60%;
+	position: relative;
 	right: 0;
-	/*top: 20px;*/
 	top: 0.714em;
 }
-
 
 .panel-links td {
 	color: #575757;
@@ -400,32 +225,110 @@ body {
 	Footer
 */
 .footer {
-	/*height: 144px;
-	margin-top: 36px;
-	padding-top: 36px;*/
 	box-sizing: border-box;
 
-	/*height: 5.143em;*/
-	/*height: 9em;*/
-	/*margin-top: 1.286em;
-	padding-top: 1.286em;*/
 	height: 11.25em;
 	margin-top: 2.25em;
 	padding-top: 2.25em;
 
-	/*border-top: 1px solid rgba(0,0,0,0.15);*/
-	border-top: 0.036em solid rgba(0,0,0,0.15);
+	border-top: 1px solid rgba(0,0,0,0.15);
 	background-color: #fff;
 	text-align: center;
 }
 .footer p {
 	margin: 0;
 	line-height: 1.4em;
-	/*font-size: 28px;*/
 	font-size: 1.75em;
 	color: #adb2af;
 }
 .footer a {
 	color: inherit;
 	text-decoration: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {
+	body {
+		font-size: 0.375em;
+	}
+
+	.panel-links header {
+		height: 2.7em;
+		line-height: 2.7em;
+		position: relative;
+	}
+
+	.panel-links header .icon {
+		position: absolute;
+		top: 0.75em;
+		right: 0.75em;
+	}
+
+	.icon-arrow {
+		background: url("../imgs/spri2.png") 0 0 no-repeat;
+	}
+	.collapse .icon-arrow {
+		background: url("../imgs/spri2.png") 0 -38px no-repeat;
+	}
+
+	.footer {
+		box-sizing: border-box;
+		height: 5.625em;
+		margin-top: 1.125em;
+		padding-top: 1.125em;
+		border-top: 0.036em solid rgba(0,0,0,0.15);
+		background-color: #fff;
+		text-align: center;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+	body {
+		font-size: 0.5em;
+	}
+	.panel-links header {
+		height: 3.333em;
+		line-height: 3.333em;
+		position: relative;
+	}
+
+	.panel-links header .icon {
+		position: absolute;
+		right: 1em;
+		top: 1em;
+	}
+
+	.icon-arrow {
+		background: url("../imgs/spri2.png") 0 0 no-repeat;
+	}
+	.collapse .icon-arrow {
+		background: url("../imgs/spri2.png") 0 -38px no-repeat;
+	}
+
+	.footer {
+		box-sizing: border-box;
+		height: 5.625em;
+		margin-top: 1.125em;
+		padding-top: 1.125em;
+		border-top: 0.036em solid rgba(0,0,0,0.15);*/
+		background-color: #fff;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:3), only screen and (min-device-pixel-ratio:3) {
+	body {
+		font-size: 0.5em;
+	}
+	.panel-links header {
+		height: 5em;
+		line-height: 5em;
+		position: relative;
+	}
+
+	.panel-links header .icon {
+		position: absolute;
+		right: 1.5em;
+		top: 1.5em;
+	}
 }

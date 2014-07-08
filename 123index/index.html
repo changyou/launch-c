@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<!-- <meta name="viewport" content="width=720,target-densitydpi=device-dpi,user-scalable=no"/> -->
-	<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="viewport" content="width=device-width,target-densitydpi=1,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 	<title>C-launcher: Awesome launcher for Android!</title>
 	<meta name="keywords" content="" />
@@ -15,74 +14,6 @@
 </head>
 <body>
 	<div class="container">
-
-   <!--  <div class="topSearch">
-      <div class="search-bar">
-        <i class="icon icon-google"></i>
-        <input type="text" id="search-box" class="input-search" placeholder="input here" />
-        <a class="icon icon-search" onclick="doSearch()"></a>
-      </div>
-    </div> -->
-
-<!--     <div class="panel panel-icons">
-      <ul class="panel-content">
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.facebook.katana ">
-            <img src="imgs/icons/Facebook.png" />
-            <span>Facebook</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.twitter.android">
-            <img src="imgs/icons/Twitter.png" />
-            <span>Twitter</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.PandoraTV">
-            <img src="imgs/icons/Pandora.png" />
-            <span>Pandora</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone">
-            <img src="imgs/icons/CNN.png" />
-            <span>CNN</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.yelp.android">
-            <img src="imgs/icons/Yelp.png" />
-            <span>Yelp</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.instagram.android">
-            <img src="imgs/icons/Instagram.png" />
-            <span>Instagram</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.protrade.sportacular">
-            <img src="imgs/icons/Yahoo-Sports.png" />
-            <span>Yahoo Sports</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.rovio.angrybirds">
-            <img src="imgs/icons/Angry-Birds.png" />
-            <span>Angry Birds</span>
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="https://play.google.com/store/apps/details?id=com.cyou.cma.launcher">
-            <img src="imgs/icons/CLauncher.png" />
-            <span>CLauncher</span>
-          </a>
-        </li>
-      </ul>
-    </div> -->
-
 	    <div class="panel panel-links hb-c1">
 	      <header>
 	        	<h2>Information</h2>
@@ -445,8 +376,8 @@
 		            <td>
 		              <a href="#">Busine</a>
 		            </td>
-		            <td>
-		              <a href="#" class="last">Busine</a>
+		            <td class="last">
+		              <a href="#">Busine</a>
 		            </td>
 	          	</tr>
 	      		<tr>
@@ -456,8 +387,8 @@
 		            <td>
 		              <a href="#">Busine</a>
 		            </td>
-		            <td>
-		              <a href="#" class="last">Busine</a>
+		            <td class="last">
+		              <a href="#">Busine</a>
 		            </td>
 	          	</tr>
 	        </table>
@@ -479,24 +410,6 @@
 				$(this).parent().toggleClass("collapse");
 				$(this).css("background","#FFFFFF");
 			});
-
-			$("#search-box").keydown(function(event) {
-				if (event.keyCode == 13 || event.which == 13) {
-			  	location='http://www.google.com/search?q=' + encodeURIComponent($(this).val());
-				}
-			});
-
-			$(".topSearch .icon-search").click(function() {
-				location='http://www.google.com/search?q=' + encodeURIComponent($("#search-box").val());
-			});
-
-			// $(".panel-content a").click(function(){
-			// 	window.open("https://www.yahoo.com");
-			// });
-
-			// $(".footer .footer-cl").click(function(){
-			// 	window.open("http://m.c-launcher.com");
-			// });
 		})
 	</script>
 </body>
